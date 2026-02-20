@@ -255,13 +255,13 @@ function initControls(globals){
                 $("#screenRecordFilename").val(globals.filename);
                 globals.screenRecordFilename = globals.filename;
               } else {
-                  globals.warn("Video export not supported by this browser, please try again " +
-                "with the latest version of Google Chrome.");
+                  globals.warn("此浏览器不支持视频导出，请尝试使用" +
+                "最新版本的Google Chrome。");
               }
           };
           img.onerror = function() {
-             globals.warn("Video export not supported by this browser, please try again " +
-                "with the latest version of Google Chrome.");
+             globals.warn("此浏览器不支持视频导出，请尝试使用" +
+                "最新版本的Google Chrome。");
           };
           img.src = '../assets/support/test.webp';
         })();
@@ -345,12 +345,12 @@ function initControls(globals){
 
     setLink("#stopRecord", function(){
         if (!globals.capturer) return;
-        if (globals.isGif) globals.warn("Processing GIF, may take a few minutes...  <br/>(you can close this window in the meantime)<br/><br/> GIFs exported from this app are not highly compressed, " +
-            "you can decrease their file size using a GIF editor.  " +
-            "I like <a href='https://ezgif.com/video-to-gif' target='blank'>EZGif</a>.");
+        if (globals.isGif) globals.warn("正在处理GIF，可能需要几分钟...  <br/>(在此期间您可以关闭此窗口)<br/><br/> 从此应用程序导出的GIF没有高度压缩，" +
+            "您可以使用GIF编辑器来减小文件大小。  " +
+            "我推荐使用<a href='https://ezgif.com/video-to-gif' target='blank'>EZGif</a>。");
         else {
-            globals.warn("Compiling WebM video.  If you have trouble playing videos exported from this app, try using " +
-                "<a href='http://www.videolan.org/vlc/index.html' target='blank'>VLC Player</a>.");
+            globals.warn("正在编译WebM视频。如果您在播放从此应用程序导出的视频时遇到问题，请尝试使用" +
+                "<a href='http://www.videolan.org/vlc/index.html' target='blank'>VLC播放器</a>。");
         }
         globals.capturer.stop();
         globals.capturer.save();
@@ -364,7 +364,7 @@ function initControls(globals){
 
     setLink("#navPattern", function(){
         if (globals.noCreasePatternAvailable()){
-            globals.warn("No crease pattern available.");
+            globals.warn("没有可用的折纸图案。");
             return;
         }
         if (globals.navMode == "pattern") return;

@@ -1209,7 +1209,7 @@ function initCurvedFolding(globals) {
 
             var _$svg = $(svg);
             if (_$svg.find('parsererror').length) {
-                globals.warn("Error parsing SVG: " + svg.innerText);
+                globals.warn("解析SVG时出错：" + svg.innerText);
                 return console.warn(_$svg.find('parsererror')[0]);
             }
 
@@ -1277,7 +1277,7 @@ function initCurvedFolding(globals) {
                 min.min(vertex);
             }
             if (min.x === Infinity){
-                if (badColors.length == 0) globals.warn("no geometry found in file");
+                if (badColors.length == 0) globals.warn("文件中未找到几何体");
                 return;
             }
             max.sub(min);
@@ -1314,7 +1314,7 @@ function initCurvedFolding(globals) {
             },
             function(){},
             function(error){
-                globals.warn("Error loading SVG " + url + " : " + error);
+                globals.warn("加载SVG时出错 " + url + " ：" + error);
                 console.warn(error);
         });
     }
@@ -1374,7 +1374,7 @@ function initCurvedFolding(globals) {
         });
 
         if (foldData.vertices_coords.length == 0 || foldData.edges_vertices.length == 0){
-            globals.warn("No valid geometry found in SVG, be sure to ungroup all and remove all clipping masks.");
+            globals.warn("SVG中未找到有效几何体，请确保取消所有组合并移除所有剪贴蒙版。");
             return false;
         }
 
@@ -2734,7 +2734,7 @@ function initCurvedFolding(globals) {
     function saveSVG(){
         if (globals.extension == "fold"){
             //todo solve for crease pattern
-            globals.warn("No crease pattern available for files imported from FOLD format.");
+            globals.warn("从FOLD格式导入的文件没有可用的折纸图案。");
             return;
         }
         gtag('event', 'saveCP', { 'CC': true });

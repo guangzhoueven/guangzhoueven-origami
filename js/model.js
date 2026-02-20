@@ -195,15 +195,15 @@ function initModel(globals){
     function buildModel(fold, creaseParams){
 
         if (fold.vertices_coords.length == 0) {
-            globals.warn("No geometry found.");
+            globals.warn("未找到几何体。");
             return;
         }
         if (fold.faces_vertices.length == 0) {
-            globals.warn("No faces found, try adjusting import vertex merge tolerance.");
+            globals.warn("未找到面，请尝试调整导入顶点合并容差。");
             return;
         }
         if (fold.edges_vertices.length == 0) {
-            globals.warn("No edges found.");
+            globals.warn("未找到边。");
             return;
         }
 

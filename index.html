@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Origami Simulator</title>
+    <title>折纸模拟器</title>
 
     <meta name="viewport" content="width=400">
 
-    <meta property="og:title" content="Origami Simulator ">
-    <meta property="og:description" content=" Real-time WebGL origami simulator app">
+    <meta property="og:title" content="折纸模拟器">
+    <meta property="og:description" content=" 实时WebGL折纸模拟应用程序">
     <meta property="og:image" content="https://origamisimulator.org/assets/doc/strain.jpg">
     <meta property="og:url" content="https://origamisimulator.org/">
 
 	<meta name="twitter:site" content="@amandaghassaei">
 	<meta name="twitter:creator" content="Amanda Ghassaei">
-    <meta name="twitter:title" content="Origami Simulator">
-    <meta name="twitter:description" content=" Real-time WebGL origami simulator app">
+    <meta name="twitter:title" content="折纸模拟器">
+    <meta name="twitter:description" content=" 实时WebGL折纸模拟应用程序">
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://origamisimulator.org/assets/doc/strain.jpg">
 
@@ -809,45 +809,44 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <p>
-                <b>ORIGAMI SIMULATOR</b><br/>
+                <b>折纸模拟器</b><br/>
 
                     <img style="width: 100%; max-width:500px" src="assets/doc/crane.gif" />
 
-                    This app allows you to simulate how any origami crease pattern will fold.  It may look a little different
-                    from what you typically think of as "origami" - rather than folding paper in a set of sequential steps,
-                    this simulation attempts to fold every crease simultaneously. It does this by iteratively solving for small displacements in the geometry of an initially flat sheet due to forces
-                    exerted by creases.
-                    You can read more about it in our paper:
+                    本应用程序允许您模拟任意折纸图案的折叠过程。它可能与您通常认为的"折纸"看起来有些不同
+                    - 不是按顺序的步骤折叠纸张，而是尝试同时折叠所有折痕。通过迭代求解初始平面纸张几何形状的小位移来实现，
+                    这些位移是由折痕施加的力引起的。
+                    您可以在我们的论文中了解更多信息：
                     <ul>
-                    <li><a target="_blank" href="http://erikdemaine.org/papers/OrigamiSimulator_Origami7/">Fast, Interactive Origami Simulation using GPU Computation</a> by Amanda Ghassaei, Erik Demaine, and Neil Gershenfeld (7OSME)
+                    <li><a target="_blank" href="http://erikdemaine.org/papers/OrigamiSimulator_Origami7/">使用GPU计算的快速交互式折纸模拟</a> 作者：Amanda Ghassaei, Erik Demaine, 和 Neil Gershenfeld (7OSME)
                     </ul>
 
-                    All simulation methods were written from scratch and are executed in parallel in several GPU fragment shaders for fast performance.
-                    The solver extends work from the following sources:
+                    所有模拟方法都是从头编写的，并在多个GPU片段着色器中并行执行以获得快速性能。
+                    求解器扩展了以下来源的工作：
                     <ul>
-                    <li><a target="_blank" href="http://www3.eng.cam.ac.uk/~sdg/preprint/5OSME.pdf">Origami Folding: A Structural Engineering Approach</a> by Mark Schenk and Simon D. Guest<br/>
-                    <li><a target="_blank" href="http://www.tsg.ne.jp/TT/cg/TachiFreeformOrigami2010.pdf">Freeform Variations of Origami</a> by Tomohiro Tachi<br/>
+                    <li><a target="_blank" href="http://www3.eng.cam.ac.uk/~sdg/preprint/5OSME.pdf">折纸折叠：结构工程方法</a> 作者：Mark Schenk and Simon D. Guest<br/>
+                    <li><a target="_blank" href="http://www.tsg.ne.jp/TT/cg/TachiFreeformOrigami2010.pdf">折纸的自由形式变体</a> 作者：Tomohiro Tachi<br/>
                     </ul>
                     <p>
-                    This app also uses the methods described in <a href="http://www.cgg.cs.tsukuba.ac.jp/projects/2020/RulingAwareTriangulation/index.html" target="_blank">Simple Simulation of Curved Folds Based on Ruling-aware Triangulation</a> to import curved crease patterns and pre-process them in a way that realistically simulates the bending between the creases.
+                    本应用程序还使用了<a href="http://www.cgg.cs.tsukuba.ac.jp/projects/2020/RulingAwareTriangulation/index.html" target="_blank">基于规则感知三角剖分的简单曲线折叠模拟</a>中描述的方法来导入曲线折纸图案，并以一种真实模拟折痕之间弯曲的方式对其进行预处理。
                     </p>
 
                     <p>
-                    Originally built by <a href="https://amandaghassaei.com/" target="_blank">Amanda Ghassaei</a> as a final project for <a href="http://courses.csail.mit.edu/6.849/spring17/" target="_blank">Geometric Folding Algorithms</a>.
-                    Other contributors include <a href="http://www.cgg.cs.tsukuba.ac.jp/~sasaki_k/" target="_blank">Sasaki Kosuke</a>, <a href="http://erikdemaine.org/" target="_blank">Erik Demaine</a>, and <a href="https://github.com/amandaghassaei/OrigamiSimulator/graphs/contributors" target="_blank">others</a>.
-                    Code available on <a href="https://github.com/amandaghassaei/OrigamiSimulator" target="_blank">Github</a>.  If you have interesting crease patterns that would
-                    make good demo files, please send them to me (Amanda) so I can add them to the <b>Examples</b> menu.  My email address is on my website.  Thanks!<br/>
+                    最初由<a href="https://amandaghassaei.com/" target="_blank">Amanda Ghassaei</a>作为<a href="http://courses.csail.mit.edu/6.849/spring17/" target="_blank">几何折叠算法</a>课程的最终项目构建。
+                    其他贡献者包括<a href="http://www.cgg.cs.tsukuba.ac.jp/~sasaki_k/" target="_blank">Sasaki Kosuke</a>、<a href="http://erikdemaine.org/" target="_blank">Erik Demaine</a>和<a href="https://github.com/amandaghassaei/OrigamiSimulator/graphs/contributors" target="_blank">其他人</a>。
+                    代码可在<a href="https://github.com/amandaghassaei/OrigamiSimulator" target="_blank">Github</a>上获得。如果您有有趣的折纸图案可以
+                    制作成好的演示文件，请发送给我（Amanda），我可以将它们添加到<b>示例</b>菜单中。我的邮箱地址在我的网站上。谢谢！<br/>
                 </p><br/>
-                    <b>Instructions:</b><br/><br/>
+                    <b>使用说明：</b><br/><br/>
                     <img style="width: 100%; max-width:600px" src="assets/doc/demoui.gif" /><br/>
 
                     <ul>
-                        <li>Slide the <b>Fold Percent</b> slider to control the degree of folding of the pattern (100% is fully folded, 0% is unfolded,
-                            and -100% is fully folded with the opposite mountain/valley assignments).</li>
-                        <li>Drag to rotate the model, scroll to zoom.</li>
-                        <li>Import other patterns under the <b>Examples</b> menu.</li>
-                        <li>Upload your own crease patterns in SVG or <a href="https://github.com/edemaine/fold" target="_blank">FOLD</a> formats, following <a href="#" class="goToImportInstructions">these instructions</a>.</li>
-                        <li>Export FOLD files or 3D models ( STL or OBJ ) of the folded state of your design ( <b>File > Save Simulation as...</b> ).</li>
+                        <li>拖动<b>折叠百分比</b>滑块来控制图案的折叠程度（100%为完全折叠，0%为未折叠，
+                            -100%为使用相反的山谷/河谷分配完全折叠）。</li>
+                        <li>拖动以旋转模型，滚动以缩放。</li>
+                        <li>在<b>示例</b>菜单下导入其他图案。</li>
+                        <li>按照<a href="#" class="goToImportInstructions">这些说明</a>上传您自己的SVG或<a href="https://github.com/edemaine/fold" target="_blank">FOLD</a>格式的折纸图案。</li>
+                        <li>导出您设计折叠状态的FOLD文件或3D模型（STL或OBJ）（<b>文件 > 将模拟另存为...</b>）。</li>
                     </ul>
                         <img style="width: 100%;" src="assets/doc/strain.jpg" />
                     <ul>
@@ -891,217 +890,217 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
         <ul class="nav navbar-nav navbar-left">
             <li class="dropdown navDropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">File <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">文件 <b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
                 <ul class="dropdown-menu">
-                    <li><a class="loadFile" href="#">Import... (SVG / FOLD)</a></li>
-                    <!--<li><a id="importSettings" href="#">SVG Import Settings...</a></li>-->
-                    <li><a id="tips" href="#">Design Tips</a></li>
+                    <li><a class="loadFile" href="#">导入... (SVG / FOLD)</a></li>
+                    <!--<li><a id="importSettings" href="#">SVG导入设置...</a></li>-->
+                    <li><a id="tips" href="#">设计技巧</a></li>
                     <li class="divider"></li>
-                    <li><a id="createGif" href="#">Record animated GIF...</a></li>
-                    <li><a id="createVideo" href="#">Record video...</a></li>
-                    <li><a id="createPNG" href="#">Save PNG screenshot...</a></li>
+                    <li><a id="createGif" href="#">录制动画GIF...</a></li>
+                    <li><a id="createVideo" href="#">录制视频...</a></li>
+                    <li><a id="createPNG" href="#">保存PNG截图...</a></li>
                     <li class="divider"></li>
-                    <li><a id="exportFOLD" href="#">Save Simulation as FOLD...</a></li>
-                    <li><a id="exportSTL" href="#">Save Simulation as STL...</a></li>
-                    <li><a id="exportOBJ" href="#">Save Simulation as OBJ...</a></li>
+                    <li><a id="exportFOLD" href="#">将模拟另存为FOLD...</a></li>
+                    <li><a id="exportSTL" href="#">将模拟另存为STL...</a></li>
+                    <li><a id="exportOBJ" href="#">将模拟另存为OBJ...</a></li>
                     <li class="divider"></li>
-                    <li><a id="saveSVG" href="#">Save Pattern as SVG...</a></li>
-                    <!--<li><a id="saveSVGScreenshot" href="#">Save SVG screenshot</a></li>-->
+                    <li><a id="saveSVG" href="#">将图案另存为SVG...</a></li>
+                    <!--<li><a id="saveSVGScreenshot" href="#">保存SVG截图</a></li>-->
                 </ul>
             </li>
             <li class="dropdown navDropdown">
-                <a href="#" id="exampleMenuButton" class="dropdown-toggle" data-toggle="dropdown">Examples <b class="caret"></b></a>
+                <a href="#" id="exampleMenuButton" class="dropdown-toggle" data-toggle="dropdown">示例 <b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
                 <ul class="dropdown-menu" style="min-width: 200px;">
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Origami<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">折纸<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="demo" data-url="Origami/flappingBird.svg">Flapping Bird</a></li>
-                            <li><a href="#" class="demo author" data-author="randlett" data-url="Origami/randlettflappingbird.svg">Randlett Flapping Bird</a></li>
-                            <li><a href="#" class="demo" data-url="Origami/traditionalCrane.svg">Crane (3D)</a></li>
-                            <li><a href="#" class="demo" data-url="Origami/flat_crane.svg">Crane (flat)</a></li>
-                            <li><a href="#" class="demo author" data-author="hypar" data-url="Origami/hypar.svg">Hypar</a></li>
-                            <li><a href="#" class="demo author" data-author="hypar" data-url="Origami/6ptHypar-anti.svg">Hypar (6 point)</a></li>
-                            <li><a href="#" class="demo" data-url="Origami/singlesquaretwist.svg">Square Twist (single)</a></li>
-                            <li><a href="#" class="demo author" data-author="squareTwist" data-url="Origami/squaretwistManyAngles.svg">Square Twist (many angles)</a></li>
-                            <li><a href="#" class="demo author" data-author="moosersTrain" data-url="Origami/MoosersTrainRigid-Gardner.svg">Mooser's Rigid Train</a></li>
-                            <li><a href="#" class="demo author" data-author="pakin" data-url="Origami/airplane.svg">Paper Airplane</a></li>
+                            <li><a href="#" class="demo" data-url="Origami/flappingBird.svg">扇动翅膀的鸟</a></li>
+                            <li><a href="#" class="demo author" data-author="randlett" data-url="Origami/randlettflappingbird.svg">Randlett扇动鸟</a></li>
+                            <li><a href="#" class="demo" data-url="Origami/traditionalCrane.svg">鹤（3D）</a></li>
+                            <li><a href="#" class="demo" data-url="Origami/flat_crane.svg">鹤（平面）</a></li>
+                            <li><a href="#" class="demo author" data-author="hypar" data-url="Origami/hypar.svg">双曲抛物面</a></li>
+                            <li><a href="#" class="demo author" data-author="hypar" data-url="Origami/6ptHypar-anti.svg">双曲抛物面（6点）</a></li>
+                            <li><a href="#" class="demo" data-url="Origami/singlesquaretwist.svg">方形扭转（单个）</a></li>
+                            <li><a href="#" class="demo author" data-author="squareTwist" data-url="Origami/squaretwistManyAngles.svg">方形扭转（多角度）</a></li>
+                            <li><a href="#" class="demo author" data-author="moosersTrain" data-url="Origami/MoosersTrainRigid-Gardner.svg">Mooser刚性火车</a></li>
+                            <li><a href="#" class="demo author" data-author="pakin" data-url="Origami/airplane.svg">纸飞机</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="demo author" data-author="langTreemaker" data-url="Origami/langCardinal.svg">Lang Cardinal</a></li>
-                            <li><a href="#" class="demo author" data-author="langTreemaker" data-url="Origami/langOrchid.svg">Lang Orchid</a></li>
-                            <li><a href="#" class="demo author" data-author="langTreemaker" data-url="Origami/langKnlDragon.svg">Lang KNL Dragon</a></li>
+                            <li><a href="#" class="demo author" data-author="langTreemaker" data-url="Origami/langCardinal.svg">Lang红雀</a></li>
+                            <li><a href="#" class="demo author" data-author="langTreemaker" data-url="Origami/langOrchid.svg">Lang兰花</a></li>
+                            <li><a href="#" class="demo author" data-author="langTreemaker" data-url="Origami/langKnlDragon.svg">Lang KNL龙</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Tessellations<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">镶嵌图案<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="demo author" data-author="miuraOri" data-url="Tessellations/miura-ori.svg">Miura-Ori</a></li>
-                            <li><a href="#" class="demo author" data-author="miuraOri" data-url="Tessellations/miura_sharpangle.svg">Miura-Ori (sharp angle)</a></li>
-                            <li><a href="#" class="demo" data-url="Tessellations/waterbomb.svg">Waterbomb</a></li>
-                            <li><a href="#" class="demo author" data-author="whirlpool" data-url="Tessellations/whirlpool.svg">Whirlpool Spiral</a></li>
-                            <li><a href="#" class="demo author" data-author="gardner" data-url="Tessellations/FTpoly7.svg">Flower Tower (flat foldable)</a></li>
-                            <li><a href="#" class="demo author" data-author="fellerSmocked" data-url="Tessellations/HexTriFlatFoldableTess.svg">Hex/Tri Tessellation (flat foldable)</a></li>
+                            <li><a href="#" class="demo author" data-author="miuraOri" data-url="Tessellations/miura-ori.svg">三浦折叠</a></li>
+                            <li><a href="#" class="demo author" data-author="miuraOri" data-url="Tessellations/miura_sharpangle.svg">三浦折叠（锐角）</a></li>
+                            <li><a href="#" class="demo" data-url="Tessellations/waterbomb.svg">水炸弹</a></li>
+                            <li><a href="#" class="demo author" data-author="whirlpool" data-url="Tessellations/whirlpool.svg">漩涡螺旋</a></li>
+                            <li><a href="#" class="demo author" data-author="gardner" data-url="Tessellations/FTpoly7.svg">花塔（可平折）</a></li>
+                            <li><a href="#" class="demo author" data-author="fellerSmocked" data-url="Tessellations/HexTriFlatFoldableTess.svg">六边形/三角形镶嵌（可平折）</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanExtrudedBoxes.svg">Huffman Extruded Boxes</a></li>
-                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanWaterbomb.svg">Huffman Waterbombs</a></li>
-                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanRectangularWeave.svg">Huffman Rect Weave</a></li>
-                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanStarsTriangles.svg">Huffman Stars-Triangles</a></li>
-                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanExdentedBoxes.svg">Huffman Exdented Boxes</a></li>
+                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanExtrudedBoxes.svg">Huffman挤压盒</a></li>
+                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanWaterbomb.svg">Huffman水炸弹</a></li>
+                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanRectangularWeave.svg">Huffman矩形编织</a></li>
+                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanStarsTriangles.svg">Huffman星形-三角形</a></li>
+                            <li><a href="#" class="demo author" data-author="huffmanTessellations" data-url="Tessellations/huffmanExdentedBoxes.svg">Huffman凹进盒</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langHoneycomb.svg">Lang Honeycomb Tessellation</a></li>
-                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langWedgeDoubleFaced.svg">Lang Wedged Double Faced Tessellation</a></li>
-                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langOvalTessellation.svg">Lang Oval Tessellation</a></li>
-                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langHyperbolicLimit.svg">Lang Hyperbolic Limit</a></li>
+                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langHoneycomb.svg">Lang蜂窝镶嵌</a></li>
+                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langWedgeDoubleFaced.svg">Lang楔形双面镶嵌</a></li>
+                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langOvalTessellation.svg">Lang椭圆形镶嵌</a></li>
+                            <li><a href="#" class="demo author" data-author="langTessellations" data-url="Tessellations/langHyperbolicLimit.svg">Lang双曲极限</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="demo author" data-author="reschTessellations" data-url="Tessellations/reschTriTessellation.svg">Resch Triangle Tessellation</a></li>
-                            <li><a href="#" class="demo author" data-author="reschTessellations" data-url="Tessellations/reschBarbell.svg">Resch Barbell Tessellation</a></li>
+                            <li><a href="#" class="demo author" data-author="reschTessellations" data-url="Tessellations/reschTriTessellation.svg">Resch三角形镶嵌</a></li>
+                            <li><a href="#" class="demo author" data-author="reschTessellations" data-url="Tessellations/reschBarbell.svg">Resch杠铃镶嵌</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Curved Creases<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">曲线折痕<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
                             <!-- Using class "cc" causes the example to be loaded with the curved crease checkbox enabled -->
                             <!-- Some examples already have rulings drawn in and don't need the cc importer -->
-                            <li><a href="#" class="demo author cc" data-author="mitani" data-url="Curved/wavy_pleats.svg">Wavy Pleats</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Tri-Wing_Boomerang_Tiling.svg">Boomerang Tessellation</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitani3Dbook" data-url="Curved/Origami_Sphere_16Flaps.svg">Origami Sphere</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitani" data-url="Curved/comet.svg">Comet</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitani" data-url="Curved/scale.svg">Scale Tessellation</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Carved_Cylinder.svg">Carved Cylinder</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Rotating_Star.svg">Rotating Star</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Crossing_curves.svg">Crossing Curves</a></li>
-                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Treble_Clef.svg">Treble Clef</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitani" data-url="Curved/wavy_pleats.svg">波浪褶皱</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Tri-Wing_Boomerang_Tiling.svg">回旋镖镶嵌</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitani3Dbook" data-url="Curved/Origami_Sphere_16Flaps.svg">折纸球体</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitani" data-url="Curved/comet.svg">彗星</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitani" data-url="Curved/scale.svg">鳞片镶嵌</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Carved_Cylinder.svg">雕刻圆柱</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Rotating_Star.svg">旋转星星</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Crossing_curves.svg">交叉曲线</a></li>
+                            <li><a href="#" class="demo author cc" data-author="mitaniCCbook" data-url="Curved/Treble_Clef.svg">高音谱号</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="demo author cc" data-author="lukashevaCCbook" data-url="Curved/Leafy_Opus_T-69.svg">Leafy (Opus T-69)</a></li>
-                            <li><a href="#" class="demo author cc" data-author="lukasheva" data-url="Curved/Sweet_Dreams_Opus_T-41.svg">Sweet Dreams (Opus T-41)</a></li>
-                            <li><a href="#" class="demo author cc" data-author="lukasheva" data-url="Curved/Improvisation-62.svg">Improvisation 62</a></li>
+                            <li><a href="#" class="demo author cc" data-author="lukashevaCCbook" data-url="Curved/Leafy_Opus_T-69.svg">叶状（作品T-69）</a></li>
+                            <li><a href="#" class="demo author cc" data-author="lukasheva" data-url="Curved/Sweet_Dreams_Opus_T-41.svg">甜蜜梦境（作品T-41）</a></li>
+                            <li><a href="#" class="demo author cc" data-author="lukasheva" data-url="Curved/Improvisation-62.svg">即兴创作62</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="demo author" data-author="huffmanCurved" data-url="Curved/huffmanTower.svg">Huffman Tower</a></li>
-                            <li><a href="#" class="demo author cc" data-author="fellerKwan" data-url="Curved/HexSpiralTess.svg">Hex Spiral Tessellation</a></li>
-                            <li><a href="#" class="demo" data-url="Curved/CircularPleat-antiFacet.svg">Circular Pleat</a></li>
-                            <li><a href="#" class="demo author" data-author="sam" data-url="Curved/shell14.svg">14 Panel Shell</a></li>
+                            <li><a href="#" class="demo author" data-author="huffmanCurved" data-url="Curved/huffmanTower.svg">Huffman塔</a></li>
+                            <li><a href="#" class="demo author cc" data-author="fellerKwan" data-url="Curved/HexSpiralTess.svg">六边形螺旋镶嵌</a></li>
+                            <li><a href="#" class="demo" data-url="Curved/CircularPleat-antiFacet.svg">圆形褶皱</a></li>
+                            <li><a href="#" class="demo author" data-author="sam" data-url="Curved/shell14.svg">14面板壳体</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Kirigami<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">剪纸艺术<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="demo author" data-author="miyamotoHappy" data-url="Kirigami/miyamotoTower.svg">Miyamoto Tower</a></li>
-                            <li><a href="#" class="demo" data-url="Kirigami/honeycombKiri.svg">Kirigami Honeycomb</a></li>
-                            <li><a href="#" class="demo author" data-author="milliron" data-url="Kirigami/auxetic_triangle.svg">Auxetic Triangle Tessellation</a></li>
-                            <li><a href="#" class="demo author" data-author="kreuter" data-url="Kirigami/triPerfTess.svg">Perforated Triangle Tessellation</a></li>
+                            <li><a href="#" class="demo author" data-author="miyamotoHappy" data-url="Kirigami/miyamotoTower.svg">宫本塔</a></li>
+                            <li><a href="#" class="demo" data-url="Kirigami/honeycombKiri.svg">剪纸蜂窝</a></li>
+                            <li><a href="#" class="demo author" data-author="milliron" data-url="Kirigami/auxetic_triangle.svg">拉胀三角形镶嵌</a></li>
+                            <li><a href="#" class="demo author" data-author="kreuter" data-url="Kirigami/triPerfTess.svg">穿孔三角形镶嵌</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Popups<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">弹出物<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="demo author" data-author="ullagami" data-url="Popup/geometricPopup.svg">Geometric Pattern</a></li>
-                            <li><a href="#" class="demo author" data-author="popupology" data-url="Popup/castlePopup.svg">Castle</a></li>
-                            <li><a href="#" class="demo author" data-author="popupology" data-url="Popup/housePopup.svg">House</a></li>
+                            <li><a href="#" class="demo author" data-author="ullagami" data-url="Popup/geometricPopup.svg">几何图案</a></li>
+                            <li><a href="#" class="demo author" data-author="popupology" data-url="Popup/castlePopup.svg">城堡</a></li>
+                            <li><a href="#" class="demo author" data-author="popupology" data-url="Popup/housePopup.svg">房屋</a></li>
                             <!--<li><a href="#" class="demo" data-url="Popup/popupSimple.svg">Simple Square</a></li>-->
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Maze Foldings<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">迷宫折叠<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="demo author" data-author="squareMaze" data-url="Squaremaze/helloworld.svg">Square Maze "hello world"</a></li>
-                            <li><a href="#" class="demo author" data-author="squareMaze" data-url="Squaremaze/origamisimulator.svg">Square Maze "origami simulator"</a></li>
-                            <li><a href="#" class="demo author" data-author="squareMaze" data-url="Squaremaze/cross.svg">Square Maze "+"</a></li>
+                            <li><a href="#" class="demo author" data-author="squareMaze" data-url="Squaremaze/helloworld.svg">方形迷宫"hello world"</a></li>
+                            <li><a href="#" class="demo author" data-author="squareMaze" data-url="Squaremaze/origamisimulator.svg">方形迷宫"折纸模拟器"</a></li>
+                            <li><a href="#" class="demo author" data-author="squareMaze" data-url="Squaremaze/cross.svg">方形迷宫"+"</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="demo author" data-author="polygami" data-url="Polygami/polygamiCross.svg">Polygami "+"</a></li>
+                            <li><a href="#" class="demo author" data-author="polygami" data-url="Polygami/polygamiCross.svg">多边形折纸"+"</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Pleating<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">褶皱<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatPyramid.fold">Box Pleat Pyramid</a></li>
-                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatSpiralPyramid.fold">Box Pleat Spiral Pyramid</a></li>
-                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatInOutWave.fold">Box Pleat In Out Wave</a></li>
-                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatSkipOneWave.fold">Box Pleat Skip One Wave</a></li>
-                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatTessellation.fold">Box Pleat Tessellation</a></li>
-                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatTessellationLarge.fold">Box Pleat Tessellation (large)</a></li>
-                        </ul>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="dropdown-submenu">
-                        <a tabindex="-1">Origami Bases<span class="pull-right fui-arrow-right"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="demo" data-url="Bases/birdBase.svg">Bird Base</a></li>
-                            <li><a href="#" class="demo author" data-author="moveSlowly" data-url="Bases/frogBase.svg">Frog Base</a></li>
-                            <li><a href="#" class="demo" data-url="Bases/boatBase.svg">Boat Base</a></li>
-                            <li><a href="#" class="demo" data-url="Bases/pinwheelBase.svg">Pinwheel Base</a></li>
-                            <li><a href="#" class="demo" data-url="Bases/openSinkBase.svg">Open Sink Base</a></li>
-                            <li><a href="#" class="demo" data-url="Bases/squareBase.svg">Square Base</a></li>
-                            <li><a href="#" class="demo" data-url="Bases/waterbombBase.svg">Waterbomb Base</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                        <a tabindex="-1">Simple Folds<span class="pull-right fui-arrow-right"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="demo" data-url="SimpleFolds/simpleVertex.svg">Simple Vertex</a></li>
-                            <li><a href="#" class="demo" data-url="SimpleFolds/russianTriangle.svg">Russian Triangle</a></li>
-                            <li><a href="#" class="demo" data-url="SimpleFolds/mapfold.svg">Map Fold</a></li>
-                            <li><a href="#" class="demo" data-url="SimpleFolds/brochurefold.svg">Brochure Fold</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                        <a tabindex="-1">Bistable<span class="pull-right fui-arrow-right"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="demo author" data-author="bistable" data-url="Bistable/curvedPleatSimple.svg">Curved Pleat</a></li>
+                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatPyramid.fold">盒形褶皱金字塔</a></li>
+                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatSpiralPyramid.fold">盒形褶皱螺旋金字塔</a></li>
+                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatInOutWave.fold">盒形褶皱进出波</a></li>
+                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatSkipOneWave.fold">盒形褶皱跳一波</a></li>
+                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatTessellation.fold">盒形褶皱镶嵌</a></li>
+                            <li><a href="#" class="demo author" data-author="konjevod" data-url="Pleating/BoxPleatTessellationLarge.fold">盒形褶皱镶嵌（大）</a></li>
                         </ul>
                     </li>
                     <li class="divider"></li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Problematic Patterns<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">折纸基础<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="demo author" data-author="skinnyTriangles" data-url="Tessellations/langRattanWeave.svg">Lang Rattan Weave</a></li>
+                            <li><a href="#" class="demo" data-url="Bases/birdBase.svg">鸟基础</a></li>
+                            <li><a href="#" class="demo author" data-author="moveSlowly" data-url="Bases/frogBase.svg">青蛙基础</a></li>
+                            <li><a href="#" class="demo" data-url="Bases/boatBase.svg">船基础</a></li>
+                            <li><a href="#" class="demo" data-url="Bases/pinwheelBase.svg">风车基础</a></li>
+                            <li><a href="#" class="demo" data-url="Bases/openSinkBase.svg">开放内陷基础</a></li>
+                            <li><a href="#" class="demo" data-url="Bases/squareBase.svg">方形基础</a></li>
+                            <li><a href="#" class="demo" data-url="Bases/waterbombBase.svg">水炸弹基础</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a tabindex="-1">简单折叠<span class="pull-right fui-arrow-right"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="demo" data-url="SimpleFolds/simpleVertex.svg">简单顶点</a></li>
+                            <li><a href="#" class="demo" data-url="SimpleFolds/russianTriangle.svg">俄罗斯三角形</a></li>
+                            <li><a href="#" class="demo" data-url="SimpleFolds/mapfold.svg">地图折叠</a></li>
+                            <li><a href="#" class="demo" data-url="SimpleFolds/brochurefold.svg">宣传册折叠</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a tabindex="-1">双稳态<span class="pull-right fui-arrow-right"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="demo author" data-author="bistable" data-url="Bistable/curvedPleatSimple.svg">曲线褶皱</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="dropdown-submenu">
+                        <a tabindex="-1">问题图案<span class="pull-right fui-arrow-right"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="demo author" data-author="skinnyTriangles" data-url="Tessellations/langRattanWeave.svg">Lang藤编</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li class="dropdown navDropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">View <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">视图 <b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
                 <ul class="dropdown-menu">
-                    <!--<li><a id="menuVis" href="#">Toggle Menu Visibility</a></li>-->
-                    <li><a id="changeBackground" href="#">Change Background Color...</a></li>
+                    <!--<li><a id="menuVis" href="#">切换菜单可见性</a></li>-->
+                    <li><a id="changeBackground" href="#">更改背景颜色...</a></li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">Rotate Model<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">旋转模型<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a id="stopRotation" href="#">Stop Rotation</a></li>
-                            <li><a id="rotateX" href="#">Rotate Around X</a></li>
-                            <li><a id="rotateY" href="#">Rotate Around Y</a></li>
-                            <li><a id="rotateZ" href="#">Rotate Around Z</a></li>
-                            <li><a id="changeRotationSpeed" href="#">Change Rotation Speed...</a></li>
+                            <li><a id="stopRotation" href="#">停止旋转</a></li>
+                            <li><a id="rotateX" href="#">绕X轴旋转</a></li>
+                            <li><a id="rotateY" href="#">绕Y轴旋转</a></li>
+                            <li><a id="rotateZ" href="#">绕Z轴旋转</a></li>
+                            <li><a id="changeRotationSpeed" href="#">更改旋转速度...</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1">View Direction<span class="pull-right fui-arrow-right"></span></a>
+                        <a tabindex="-1">视角方向<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" id="cameraZ">View Front</a></li>
-                            <li><a href="#" id="cameraMinusZ">View Back</a></li>
-                            <li><a href="#" id="cameraX">View Right</a></li>
-                            <li><a href="#" id="cameraMinusX">View Left</a></li>
-                            <li><a href="#" id="cameraY">View Top</a></li>
-                            <li><a href="#" id="cameraMinusY">View Bottom</a></li>
-                            <li><a href="#" id="cameraIso">View Iso</a></li>
+                            <li><a href="#" id="cameraZ">正面视图</a></li>
+                            <li><a href="#" id="cameraMinusZ">背面视图</a></li>
+                            <li><a href="#" id="cameraX">右侧视图</a></li>
+                            <li><a href="#" id="cameraMinusX">左侧视图</a></li>
+                            <li><a href="#" id="cameraY">顶部视图</a></li>
+                            <li><a href="#" id="cameraMinusY">底部视图</a></li>
+                            <li><a href="#" id="cameraIso">等距视图</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a id="navPattern" href="#">Pattern</a></li>
-            <li><a id="navSimulation" href="#">Simulation</a></li>
-            <li><a id="about" class="menuHoverControls" target="_blank" href="#">About</a></li>
+            <li><a id="navPattern" href="#">图案</a></li>
+            <li><a id="navSimulation" href="#">模拟</a></li>
+            <li><a id="about" class="menuHoverControls" target="_blank" href="#">关于</a></li>
 			
         </ul>
 		 <ul class="nav navbar-nav navbar-right">
-			<li><a id="PackCADLink" href="https://packcad.com/">We're working on something new → PackCAD</a></li>
+			<li><a id="PackCADLink" href="https://packcad.com/">我们正在开发新产品 → PackCAD</a></li>
 		 </ul>
         <!--<form class="navbar-form navbar-right" action="#" role="search">-->
             <!--<div class="form-group">-->
               <!--<div class="input-group">-->
                 <div class="sliderInput floatRight" id="creasePercentNav">
-                    <span class="label-slider">Fold Percent : </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+                    <span class="label-slider">折叠百分比： </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
                     <!--<input value="" placeholder="" class="form-control" type="text">-->
                 </div>
               <!--</div>-->
@@ -1123,14 +1122,14 @@
             <!--Allow User Interaction-->
         <!--</label>-->
     <!--</div><br/><br/>-->
-    <a href="#" id="showAdvancedOptions">Show Advanced Options</a><br/><br/>
+    <a href="#" id="showAdvancedOptions">显示高级选项</a><br/><br/>
 
 </div>
 
 <div id="controls">
-    <a href="#" id="hideAdvancedOptions">Hide Advanced Options</a><br/><br/>
+    <a href="#" id="hideAdvancedOptions">隐藏高级选项</a><br/><br/>
     <div class="sliderInput floatRight" id="creasePercent">
-        <span class="label-slider">Fold Percent : </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+        <span class="label-slider">折叠百分比： </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
         <input value="" placeholder="" class="float form-control" type="text">&nbsp;&nbsp;%
     </div><br/><br/>
     <!--<b>Simulation Type:</b><br/>-->
@@ -1156,79 +1155,79 @@
         </label>
     </div><br/>
     <div id="simButtons" class="alignRight">
-        <a href="#" id="start" class="paddingBottom btn btn-lg btn-success">Start Simulation</a>
-        <a href="#" id="pause" class="paddingBottom btn btn-lg btn-warning">Pause Simulation</a>
-        <a href="#" id="reset" class="paddingBottom btn btn-lg btn-default">Reset</a>
+        <a href="#" id="start" class="paddingBottom btn btn-lg btn-success">开始模拟</a>
+        <a href="#" id="pause" class="paddingBottom btn btn-lg btn-warning">暂停模拟</a>
+        <a href="#" id="reset" class="paddingBottom btn btn-lg btn-default">重置</a>
     </div>
     <div class="fullWidth">
-        <a href="#" class="seeMore closed" data-id="simulationSettings"><span class="fui-triangle-down"></span><b>Simulation Settings:</b></a><a class="about" href="#" id="aboutStiffness"><span class="fui-question-circle"></span></a><br/>
+        <a href="#" class="seeMore closed" data-id="simulationSettings"><span class="fui-triangle-down"></span><b>模拟设置：</b></a><a class="about" href="#" id="aboutStiffness"><span class="fui-question-circle"></span></a><br/>
         <div id="simulationSettings" class="hide">
-            <div class="indent">Numerical Integration:
+            <div class="indent">数值积分：
             <div class="doubleIndent">
                 <label class="radio">
                     <input name="integrationType" value="euler" data-toggle="radio" class="custom-radio" type="radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
-                    Euler (first order)
+                    欧拉方法（一阶）
                 </label>
                 <label class="radio">
                     <input name="integrationType" value="verlet" data-toggle="radio" class="custom-radio" type="radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
-                    Verlet (second order)
+                    Verlet方法（二阶）
                 </label>
             </div></div><br/>
             <div class="sliderInput paddingBottom" id="axialStiffness">
-                <span class="label-slider">Axial Stiffness : </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+                <span class="label-slider">轴向刚度： </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
                 <input value="" placeholder="" class="float form-control" type="text">
             </div>
             <div class="sliderInput paddingBottom" id="faceStiffness">
-                <span class="label-slider">Face Stiffness : </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+                <span class="label-slider">面刚度： </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
                 <input value="" placeholder="" class="float form-control" type="text">
             </div>
             <div class="sliderInput" id="creaseStiffness">
-                <span class="label-slider">Fold Stiffness : </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+                <span class="label-slider">折痕刚度： </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
                 <input value="" placeholder="" class="float form-control" type="text">
             </div>
             <div class="sliderInput" id="panelStiffness">
-                <span class="label-slider">Facet Crease Stiffness : </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+                <span class="label-slider">面折痕刚度： </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
                 <input value="" placeholder="" class="float form-control" type="text">
             </div>
             <div class="sliderInput" id="percentDamping">
-                <span class="label-slider">Damping Ratio : </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+                <span class="label-slider">阻尼比： </span><div class="flat-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
                 <input value="" placeholder="" class="float form-control" type="text">
             </div>
         </div><br/>
     </div>
     <div class="fullWidth">
-        <a href="#" class="seeMore closed" data-id="animationsSettings"><span class="fui-triangle-down"></span><b>Animation Settings:</b></a><a class="about" href="#" id="aboutAnimation"><span class="fui-question-circle"></span></a><br/>
+        <a href="#" class="seeMore closed" data-id="animationsSettings"><span class="fui-triangle-down"></span><b>动画设置：</b></a><a class="about" href="#" id="aboutAnimation"><span class="fui-question-circle"></span></a><br/>
         <div id="animationsSettings" class="fullWidth hide">
             <div class="doubleIndent">
                 <span class="smallTxt">&Delta;t = <span id="deltaT"></span> seconds</span><br/>
-                <span class="smallTxt">Num simulation steps per frame: &nbsp;&nbsp;<input value="" placeholder="" class="numStepsPerRender int form-control" type="text"></span><br/><br/>
+                <span class="smallTxt">每帧模拟步数： &nbsp;&nbsp;<input value="" placeholder="" class="numStepsPerRender int form-control" type="text"></span><br/><br/>
                 <div id="stepForwardOptions" class="floatRight">
-                    <a href="#" id="stepForward" class="floatRight btn btn-lg btn-default">Step Forward</a><br/><br/>
+                    <a href="#" id="stepForward" class="floatRight btn btn-lg btn-default">单步前进</a><br/><br/>
                 </div>
                 <div class="fullWidth alignRight">
-                    <a href="#" id="shouldCenterGeo" class="displayBlock btn btn-lg btn-default">Re-center geometry</a>
+                    <a href="#" id="shouldCenterGeo" class="displayBlock btn btn-lg btn-default">重新居中几何体</a>
                 </div>
             </div>
         </div>
     </div><br/>
 
     <div class="fullWidth">
-        <a href="#" class="seeMore closed" data-id="errorInfo"><span class="fui-triangle-down"></span><b>Error:</b></a><a class="about" href="#" id="aboutError"><span class="fui-question-circle"></span></a><br/>
+        <a href="#" class="seeMore closed" data-id="errorInfo"><span class="fui-triangle-down"></span><b>错误：</b></a><a class="about" href="#" id="aboutError"><span class="fui-question-circle"></span></a><br/>
         <div id="errorInfo" class="hide smallTxt doubleIndent">
-            <label>Average vertex error: <span id="globalError"></span></label>
+            <label>平均顶点误差：<span id="globalError"></span></label>
         </div>
     </div><br/>
 
     <div class="extraSpace"></div>
 </div>
 <div id="svgViewer"></div>
-<div id="helper">Load more origami patterns here!</div>
+<div id="helper">在这里加载更多折纸图案！</div>
 <div id="controlsBottom">
     <div id="viewToggle" class="bigToggle">
         <div>
-            <a href="#" id="colorToggle"><div class="active"><img src="assets/hyparColorSmall.png"/><span>Material</span></div></a><div class="separator"></div><a href="#" id="strainToggle"><div><img src="assets/hyparStrainSmall.png"/><span>Strain</span></div></a>
+            <a href="#" id="colorToggle"><div class="active"><img src="assets/hyparColorSmall.png"/><span>材质</span></div></a><div class="separator"></div><a href="#" id="strainToggle"><div><img src="assets/hyparStrainSmall.png"/><span>应变</span></div></a>
         </div>
-        View Mode
+        视图模式
     </div>
     <div id="bottomSliderContainer">
         <div class="sliderInput" id="creasePercentBottom">
@@ -1236,30 +1235,30 @@
         </div>
         <a href="#" id="flatIndicator" class="sliderEndPt smallTxt">
             <!--<img src="assets/flatcraneSmall.png"/>-->
-            <span class="sliderEndPtLabel">Flat</span>
+            <span class="sliderEndPtLabel">展开</span>
             <span class="fui-triangle-down"></span>
         </a>
         <a href="#" id="foldedIndicator" class="sliderEndPt smallTxt">
             <!--<img src="assets/foldedCraneSmall.png"/>-->
-            <span class="sliderEndPtLabel">Folded</span>
+            <span class="sliderEndPtLabel">折叠</span>
             <span class="fui-triangle-down"></span>
         </a>
-        <span>Fold Percent: <span id="foldPercentSimple"></span>%</span>
+        <span>折叠百分比：<span id="foldPercentSimple"></span>%</span>
     </div>
     <div id="controlsToggle" class="bigToggle">
         <div>
-            <a href="#" id="orbitToggle"><div class="active"><img class="preserveAspect" src="assets/rotateSmall.png"/><span>Rotate</span></div></a><div class="separator"></div><a href="#" id="grabToggle"><div><img class="preserveAspect" src="assets/grabSmall.png"/><span>Grab</span></div></a>
+            <a href="#" id="orbitToggle"><div class="active"><img class="preserveAspect" src="assets/rotateSmall.png"/><span>旋转</span></div></a><div class="separator"></div><a href="#" id="grabToggle"><div><img class="preserveAspect" src="assets/grabSmall.png"/><span>抓取</span></div></a>
         </div>
-        Control Mode
+        控制模式
     </div>
-    <a href="#" id="resetBottom" class="btn btn-lg btn-default">Reset</a>
+    <a href="#" id="resetBottom" class="btn btn-lg btn-default">重置</a>
 </div>
 <div id="controlsLeft" class="flipped">
     <div>
-        <b>View Settings:</b><br/><br/>
+        <b>视图设置：</b><br/><br/>
         <div class="indent">
             <div>
-                <a href="#" class="seeMore open" data-id="materialSettings"><span class="fui-triangle-down"></span>Mesh Material:</a>
+                <a href="#" class="seeMore open" data-id="materialSettings"><span class="fui-triangle-down"></span>网格材质：</a>
             </div>
             <div id="materialSettings" class="inlineBlock indent">
                 <label class="checkbox" for="meshVisible">

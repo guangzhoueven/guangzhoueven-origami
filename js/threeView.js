@@ -155,7 +155,7 @@ function initThreeView(globals) {
     function onWindowResize() {
 
         if (globals.vrEnabled){
-            globals.warn("Can't resize window when in VR mode.");
+            globals.warn("在VR模式下无法调整窗口大小。");
             return;
         }
 

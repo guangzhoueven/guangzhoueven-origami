@@ -110,7 +110,7 @@ function initImporter(globals){
                     try {
                         var fold = JSON.parse(reader.result);
                         if (!fold || !fold.vertices_coords || !fold.edges_assignment || !fold.edges_vertices || !fold.faces_vertices){
-                            globals.warn("Invalid FOLD file, must contain all of: <br/>" +
+                            globals.warn("无效的FOLD文件，必须包含所有以下内容：<br/>" +
                                 "<br/>vertices_coords<br/>edges_vertices<br/>edges_assignment<br/>faces_vertices");
                             return;
                         }
@@ -173,14 +173,14 @@ function initImporter(globals){
                             globals.pattern.setFoldData(fold);
                         });
                     } catch(err) {
-                        globals.warn("Unable to parse FOLD json.");
+                        globals.warn("无法解析FOLD JSON。");
                         console.log(err);
                     }
                 }
             }(file);
             reader.readAsText(file);
         } else {
-            globals.warn('Unknown file extension: .' + extension);
+            globals.warn('未知文件扩展名：.' + extension);
             return null;
         }
     }
@@ -257,7 +257,7 @@ function initImporter(globals){
     }
 
     function warnUnableToLoad(){
-        globals.warn("Unable to load file.");
+        globals.warn("无法加载文件。");
     }
 
     return {

@@ -78,15 +78,15 @@ function initVideoAnimator(globals){
     function setAnimationStatus(){
         if (foldAngleSequence.length == 0) {
             $("#foldPercentAnimationStatus").removeClass("warning");
-            $("#foldPercentAnimationStatus").html("no animation configured");
+            $("#foldPercentAnimationStatus").html("未配置动画");
             return;
         }
         if (isValid()) {
             $("#foldPercentAnimationStatus").removeClass("warning");
-            $("#foldPercentAnimationStatus").html("animation configured");
+            $("#foldPercentAnimationStatus").html("动画已配置");
         } else {
             $("#foldPercentAnimationStatus").addClass("warning");
-            $("#foldPercentAnimationStatus").html("incomplete config, will be ignored");
+            $("#foldPercentAnimationStatus").html("配置不完整，将被忽略");
         }
     }
 
@@ -94,7 +94,7 @@ function initVideoAnimator(globals){
         setAnimationStatus();
         var html = "";
         if (foldAngleSequence.length == 0){
-            $("#animationSetupHelp").html("No animation items in sequence.");
+            $("#animationSetupHelp").html("序列中没有动画项。");
             $("#animationHTML").html("");
             return;
         }
@@ -102,7 +102,7 @@ function initVideoAnimator(globals){
             if (foldAngleSequence[i].type == "delay") html += renderDelay(foldAngleSequence[i], i);
             else html += renderItem(foldAngleSequence[i], i);
         }
-        $("#animationSetupHelp").html("Configure automatic <b>Fold Percent</b> control:");
+        $("#animationSetupHelp").html("配置自动<b>折叠百分比</b>控制：");
         $("#animationHTML").html(html);
 
         //bind events

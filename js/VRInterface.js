@@ -57,12 +57,12 @@ function initViveInterface(globals){
     scene.add( gui );
     gui.visible = false;
 
-    gui.add(variables, "foldPercent").min(-100).max(100).step(1).name("Fold Percent").onChange(function(val){
+    gui.add(variables, "foldPercent").min(-100).max(100).step(1).name("折叠百分比").onChange(function(val){
         globals.creasePercent = val/100;
         globals.shouldChangeCreasePercent = true;
         globals.controls.updateCreasePercent();//update other gui
     });
-    gui.add(variables, "strainMap").name("Show Strain").onChange( function(val) {
+    gui.add(variables, "strainMap").name("显示应变").onChange( function(val) {
         var mode = "color";
         if (val) mode = "axialStrain";
         globals.colorMode = mode;
@@ -73,29 +73,28 @@ function initViveInterface(globals){
         globals.model.setMeshMaterial();
         $(".radio>input[value="+mode+"]").prop("checked", true);
     });
-    gui.add(variables,'Reset').name("Reset Simulation");
-    gui.add(variables, "damping").min(0.1).max(1).step(0.01).name("Damping (0-1)").onChange( function(val) {
+    gui.add(variables,'Reset').name("重置模拟");
+    gui.add(variables, "damping").min(0.1).max(1).step(0.01).name("阻尼 (0-1)").onChange( function(val) {
         globals.percentDamping = val;
         globals.materialHasChanged = true;
         globals.controls.setSliderInputVal("#percentDamping", val);
     });
-    gui.add(variables, "stepsPerFrame").min(1).max(200).step(1).name("Num Steps Per Frame").onChange( function(val) {
+    gui.add(variables, "stepsPerFrame").min(1).max(200).step(1).name("每帧步数").onChange( function(val) {
         globals.numSteps = val;
         $(".numStepsPerRender").val(val);
     }).listen();
-    gui.add(variables, "scale").min(0.01).max(1).step(0.001).name("Scale").onChange( function(val) {
+    gui.add(variables, "scale").min(0.01).max(1).step(0.001).name("缩放").onChange( function(val) {
         globals.threeView.modelWrapper.scale.set(val, val, val);
     });
     var positionCallback = function(val){
         globals.threeView.modelWrapper.position.copy(variables.position);
     };
     var positionBound = 2;
-    gui.add(variables.position, "x").min(-positionBound).max(positionBound).step(0.01).name("Position X").onChange(positionCallback);
-    gui.add(variables.position, "z").min(-positionBound).max(positionBound).step(0.01).name("Position Y").onChange(positionCallback);//z and y are flipped
-    gui.add(variables.position, "y").min(-positionBound).max(positionBound).step(0.01).name("Position Z").onChange(positionCallback);
+    gui.add(variables.position, "x").min(-positionBound).max(positionBound).step(0.01).name("位置 X").onChange(positionCallback);
+    gui.add(variables.position, "z").min(-positionBound).max(positionBound).step(0.01).name("位置 Y").onChange(positionCallback);//z and y are flipped
+    gui.add(variables.position, "y").min(-positionBound).max(positionBound).step(0.01).name("位置 Z").onChange(positionCallback);
 
-
-    var examplesMenu = dat.GUIVR.create( 'Examples');
+    var examplesMenu = dat.GUIVR.create( '示例');
     examplesMenu.position.set(1.1, 2.3, -0.1);
     examplesMenu.rotation.set(0, -Math.PI / 2, 0);
     scene.add( examplesMenu );
@@ -179,7 +178,7 @@ function initViveInterface(globals){
                 globals.vertTol = 3;
                 globals.importer.importDemoFile(url);
             }
-            examplesMenu.name("Examples - current file: " + val);
+            examplesMenu.name("示例 - 当前文件: " + val);
         });
     });
 
@@ -284,7 +283,7 @@ function initViveInterface(globals){
                     globals.model.reset();
                     // globals.threeView.onWindowResize();
                     globals.threeView.resetCamera();
-                    $link.html("ENTER VR");
+                    $link.html("进入VR");
                     globals.threeView.setBackgroundColor();
                     globals.threeView.modelWrapper.scale.set(1, 1, 1);
                     globals.threeView.modelWrapper.position.set(0,0,0);

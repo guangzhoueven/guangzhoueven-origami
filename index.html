@@ -850,30 +850,27 @@
                     </ul>
                         <img style="width: 100%;" src="assets/doc/strain.jpg" />
                     <ul>
-                        <li>Visualize the internal strain of the origami as it folds using the <b>Strain Visualization</b> in the left menu of the <b>Advanced Options</b>.</li>
+                        <li>使用<b>高级选项</b>左侧菜单中的<b>应变可视化</b>来可视化折纸折叠过程中的内部应变。</li>
                     </ul>
                         <img style="width: 100%; max-width:600px" src="assets/doc/huffmanvr.jpg" /><br/>
                     <ul>
-                        <li>If you are working from a computer connected to a VR headset and hand controllers, follow <a href="#" id="goToViveInstructions">these instructions</a>
-                            to use this app in an interactive virtual reality mode. (sorry I think this may be deprecated now!)</li>
-                    </ul>
+                        <li>如果您正在使用连接到VR头显和手柄控制器的计算机，请按照<a href="#" id="goToViveInstructions">这些说明</a>
+                        在交互式虚拟现实模式下使用此应用程序。（抱歉，我认为这可能已经过时了！）</li>                    </ul>
 
                     <br/>
-                    <b>External Libraries:</b><br/><br/>
+                    <b>外部库：</b><br/><br/>
                     <ul>
-                        <li>All rendering and 3D interaction done with <a target="_blank" href="https://threejs.org/">three.js</a></li>
-                        <li><a href="https://github.com/fontello/svgpath" target="_blank">svgpath</a> and <a href="https://www.npmjs.com/package/path-data-polyfill" target="_blank">path-data-polyfill</a> helps with SVG path parsing</li>
-                        <li><a href="https://github.com/edemaine/fold" target="_blank">FOLD</a> is used as the internal data structure, methods from the
-                            <a href="https://github.com/edemaine/fold/blob/master/doc/api.md" target="_blank">FOLD API</a> used for SVG parsing</li>
-                        <li>Arbitrary polygonal faces of imported geometry are triangulated using the <a target="_blank" href="https://github.com/mapbox/earcut">Earcut Library</a> and <a href="https://github.com/mikolalysenko/cdt2d" target="_blank"></a>cdt2d</a></li>
-                        <li><a href="http://www.numericjs.com/" target="_blank">numeric.js</a> for linear algebra operations</li>
-                        <li>GIF and WebM video export uses <a target="_blank" href="https://github.com/spite/ccapture.js/">CCapture</a></li>
-                    </ul>
-                <p>
+                        <li>所有渲染和3D交互使用<a target="_blank" href="https://threejs.org/">three.js</a>完成</li>
+                        <li><a href="https://github.com/fontello/svgpath" target="_blank">svgpath</a>和<a href="https://www.npmjs.com/package/path-data-polyfill" target="_blank">path-data-polyfill</a>帮助SVG路径解析</li>
+                        <li><a href="https://github.com/edemaine/fold" target="_blank">FOLD</a>用作内部数据结构，使用
+                            <a href="https://github.com/edemaine/fold/blob/master/doc/api.md" target="_blank">FOLD API</a>的方法进行SVG解析</li>
+                        <li>导入几何体的任意多边形面使用<a target="_blank" href="https://github.com/mapbox/earcut">Earcut库</a>和<a href="https://github.com/mikolalysenko/cdt2d" target="_blank">cdt2d</a>进行三角化</li>
+                        <li><a href="http://www.numericjs.com/" target="_blank">numeric.js</a>用于线性代数运算</li>
+                        <li>GIF和WebM视频导出使用<a target="_blank" href="https://github.com/spite/ccapture.js/">CCapture</a></li>
+                    </ul>                <p>
                     <br/>
-                    You can find additional information in <a href="http://erikdemaine.org/papers/OrigamiSimulator_Origami7/" target="_blank">our 7OSME paper</a> and <a href="http://www.amandaghassaei.com/projects/origami_simulator/" target="_blank">project website</a>.
-                    If you have feedback about features you want to see in this app, please see <a href="https://github.com/amandaghassaei/OrigamiSimulator/discussions/41" target="_blank">this thread</a>.
-                    <br/>
+                    您可以在<a href="http://erikdemaine.org/papers/OrigamiSimulator_Origami7/" target="_blank">我们的7OSME论文</a>和<a href="http://www.amandaghassaei.com/projects/origami_simulator/" target="_blank">项目网站</a>上找到更多信息。
+                    如果您对此应用程序中希望看到的功能有反馈，请查看<a href="https://github.com/amandaghassaei/OrigamiSimulator/discussions/41" target="_blank">这个讨论串</a>。                    <br/>
                     <br/>
                 </p>
             </div>
@@ -1277,15 +1274,14 @@
                         Colored Material
                     </label>
                     <div id="coloredMaterialOptions" class="indent">
-                        <label>Color 1 (rgb hex): &nbsp;&nbsp;</label><input id="color1" value="" placeholder="" class="hexVal form-control" type="text"><br/>
-                        <label>Color 2 (rgb hex): &nbsp;&nbsp;</label><input id="color2" value="" placeholder="" class="hexVal form-control" type="text"><br/>
-                    </div>
+                        <label>颜色1 (rgb十六进制): &nbsp;&nbsp;</label><input id="color1" value="" placeholder="" class="hexVal form-control" type="text"><br/>
+                        <label>颜色2 (rgb十六进制): &nbsp;&nbsp;</label><input id="color2" value="" placeholder="" class="hexVal form-control" type="text"><br/>                    </div>
                     <label class="radio">
                         <input name="colorMode" value="axialStrain" data-toggle="radio" class="custom-radio" type="radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
                         Strain Visualization<a class="about floatRight" href="#" id="aboutAxialStrain"><span class="fui-question-circle"></span></a>
                     </label>
                     <div id="axialStrainMaterialOptions" class="indent">
-                        <label>Max Strain: &nbsp;&nbsp;</label>
+                        <label>最大应变: &nbsp;&nbsp;</label>
                         <input id="strainClip" value="" placeholder="" class="float form-control" type="text"> %<br/>
                     </div>
                     <label class="radio">
@@ -1296,7 +1292,7 @@
                 <br/>
             </div><br/>
             <div>
-                <a href="#" class="seeMore closed" data-id="edgeVisibility"><span class="fui-triangle-down"></span>Edge Visibility</a>:
+                <a href="#" class="seeMore closed" data-id="edgeVisibility"><span class="fui-triangle-down"></span>边可见性</a>:
             </div>
             <div id="edgeVisibility" class="hide indent">
                 <label class="checkbox" for="edgesVisible">
@@ -1337,10 +1333,10 @@
                 <!--</label>-->
             <!--</div>-->
             <div>
-                <a href="#" class="seeMore closed" data-id="virtualReality"><span class="fui-triangle-down"></span>Virtual Reality:</a><a class="about floatRight" href="#" id="aboutVR"><span class="fui-question-circle"></span></a>
+                <a href="#" class="seeMore closed" data-id="virtualReality"><span class="fui-triangle-down"></span>虚拟现实:</a><a class="about floatRight" href="#" id="aboutVR"><span class="fui-question-circle"></span></a>
             </div>
             <div id="virtualReality" class="hide indent smallTxt">
-                <b>Status:</b> &nbsp;<span id="VRstatus"></span>
+                <b>状态:</b> &nbsp;<span id="VRstatus"></span>
                 <div id="VRoptions"><br/>
                     <a href="#" id="enterVR" class="displayBlock btn btn-lg btn-inverse"></a>
                 </div><br/><br/>
@@ -1357,36 +1353,35 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <p><b>DESIGN TIPS</b><br/><br/>
+                <p><b>设计技巧</b><br/><br/>
                     Bad design files will throw errors and create models that explode or cannot be solved, here are some tips for
                     importing FOLD or SVG files that work.<br/><br/>
-                    <b>Importing FOLD:</b><br/><br/>
-                    The FOLD file format is specified in <a target="_blank" href="https://github.com/edemaine/fold">these docs</a>.
-                    This tool imports FOLD v1.0 files with <b>all</b> of the following fields populated:
+                    <b>导入FOLD:</b><br/><br/>
+                    FOLD文件格式在<a target="_blank" href="https://github.com/edemaine/fold">这些文档</a>中指定。
+                    此工具导入具有<b>所有</b>以下字段的FOLD v1.0文件：
                     <ul>
-                        <li>vertices_coords</li>
-                        <li>edges_vertices</li>
-                        <li>edges_assignment</li>
-                        <li>faces_vertices</li>
+                        <li>vertices_coords (顶点坐标)</li>
+                        <li>edges_vertices (边顶点)</li>
+                        <li>edges_assignment (边分配)</li>
+                        <li>faces_vertices (面顶点)</li>
                     </ul>
-                    You may specify the target fold angle of each crease using the edges_foldAngle field. 
-                    Note that fold angle is a number in degrees lying in the range [−180, 180]. 
-                    The fold angle is positive for valley folds, negative for mountain folds, and zero for flat regions.
-                    Accordingly, the sign of edges_foldAngle should match edges_assignment if both are specified.
-                    You may also assign a null fold angle to a crease so that it is allowed to move freely - this is especially useful when the fold angle is unknown or the crease pattern is fully constrained and able to be driven by other creases in the system.
+                    您可以使用edges_foldAngle字段指定每个折痕的目标折叠角度。
+                    请注意，折叠角度是一个以度为单位、范围在[−180, 180]内的数字。
+                    谷折的折叠角度为正，山折的折叠角度为负，平区域为零。
+                    因此，如果同时指定了edges_foldAngle和edges_assignment，edges_foldAngle的符号应与edges_assignment匹配。
+                    您还可以为折痕分配null折叠角度，使其能够自由移动 - 当折叠角度未知或折痕图案完全受约束且能够由系统中的其他折痕驱动时，这特别有用。
                     <br/><br/>
-                    If you are unsure whether your FOLD file is valid, you can inspect it using the
-                    <a target="_blank" href="https://edemaine.github.io/fold/examples/foldviewer.html">FOLD Viewer</a>. 
-                    If you are having trouble, please refer to the <a target=_blank href="https://github.com/edemaine/fold/blob/master/doc/spec.md">FOLD spec</a>.
+                    如果您不确定FOLD文件是否有效，可以使用
+                    <a target="_blank" href="https://edemaine.github.io/fold/examples/foldviewer.html">FOLD查看器</a>检查它。
+                    如果您遇到问题，请参考<a target=_blank href="https://github.com/edemaine/fold/blob/master/doc/spec.md">FOLD规范</a>。
                     <br/><br/>
-                    <b>Importing SVG:</b><br/><br/>
+                    <b>导入SVG:</b><br/><br/>
                     <ul>
-                        <li>The SVG importer supports path, line, rect, polygon, and polyline objects with the appropriate
-                            stroke color:</li>
-                        <li>Mountain folds have <b style="color:red">red</b> stroke - rgb(255, 0, 0), hex #ff0000</li>
-                        <li>Valley folds have <b style="color:blue">blue</b> stroke - rgb(0, 0, 255), hex #0000ff</li>
-                        <li>Boundary edges have <b style="color:black">black</b> stroke - rgb(0, 0, 0), hex #000000 - use
-                        this edge type for both the outline of the pattern, and any internal holes.</li>
+                        <li>SVG导入器支持具有适当描边颜色的path、line、rect、polygon和polyline对象：</li>
+                        <li>山折具有<b style="color:red">红色</b>描边 - rgb(255, 0, 0), hex #ff0000</li>
+                        <li>谷折具有<b style="color:blue">蓝色</b>描边 - rgb(0, 0, 255), hex #0000ff</li>
+                        <li>边界边具有<b style="color:black">黑色</b>描边 - rgb(0, 0, 0), hex #000000 - 使用
+                        此边类型作为图案的轮廓和任何内部孔洞。</li>
                     </ul>
                         <object type="image/svg+xml" data="assets/doc/simplePatterns.svg">
                           Your browser does not support SVG
@@ -1403,51 +1398,48 @@
                     <ul>
                         <li>Before the model can enter the simulator, this tool will automatically triangulate regions in the pattern that form polygons with more than three sides.
                         To control the triangulations, draw lines in <b style="color:#cccc00">yellow</b> - rgb(255, 255, 0), hex #ffff00.  In general, patterns are more stable when their triangulation is symmetric and minimizes long, skinny triangles.  You can see
-                        how the app automatically triangulated your pattern by enabling "Facet Crease" visibility in the <b>Advanced Options > Edges Visibility</b>
-                            menu on the left side of the screen.  It may not be necessary to add triangulation lines on your pattern.</li>
+                        通过启用屏幕左侧<b>高级选项 > 边可见性</b>菜单中的"面折痕"可见性，查看应用程序如何自动三角剖分您的图案。可能不需要在您的图案上添加三角剖分线。</li>
                     </ul>
                         <object type="image/svg+xml" data="assets/doc/triangulations.svg">
                           Your browser does not support SVG
                         </object>
                     <ul>
-                        <li>Facet creases (yellow triangulation lines) are creases that try to remain flat (0&deg; fold angle) as the pattern folds, but some compliance
-                            in the constraints of the simulation will allow them to bend slightly.  Drawing in facet creases allows you to control
-                            the way the model bends in between mountain/valley folds.  This is especially relevant in patterns with curved creases.
-                            If you import an svg with bezier curves and select the checkbox "crease pattern contains curves" in the import dialog, we attempt to triangulate it for you using the algorithm described by <a href="http://www.cgg.cs.tsukuba.ac.jp/projects/2020/RulingAwareTriangulation/index.html" target="_blank">Simple Simulation of Curved Folds Based on Ruling-aware Triangulation</a>.
-                            We recommend trying this first, and add additional facet creases to your svg design where needed.
-                        </li>
+                        <li>面折痕（黄色三角剖分线）是在图案折叠时试图保持平坦（0°折叠角度）的折痕，但模拟约束中的一些柔性
+                                                    将允许它们轻微弯曲。绘制面折痕允许您控制
+                                                    模型在山折/谷折之间的弯曲方式。这在具有曲线折痕的图案中尤其重要。
+                                                    如果您导入带有贝塞尔曲线的svg并在导入对话框中选中"折痕图案包含曲线"复选框，我们会尝试使用<a href="http://www.cgg.cs.tsukuba.ac.jp/projects/2020/RulingAwareTriangulation/index.html" target="_blank">基于规则感知三角剖分的曲线折叠简单模拟</a>中描述的算法为您进行三角剖分。
+                                                    我们建议首先尝试此方法，并在需要时在svg设计中添加额外的面折痕。</li>
                     </ul>
                         <object type="image/svg+xml" data="assets/doc/triangulationsCurved.svg">
                           Your browser does not support SVG
                         </object>
                     <ul>
-                        <li>Cuts have <b style="color:#00ff00">green</b> stroke - rgb(0, 255, 0), hex #00ff00 - use this edge type
-                        to form thin slits in the pattern.</li>
+                        <li>切割线具有<b style="color:#00ff00">绿色</b>描边 - rgb(0, 255, 0), hex #00ff00 - 使用此边类型
+                        在图案中形成细缝。</li>
                     </ul>
                         <object type="image/svg+xml" data="assets/doc/cuts.svg">
                           Your browser does not support SVG
                         </object>
                     <ul>
-                        <li>Undriven creases have <b style="color:magenta">magenta</b> stroke - rgb(255, 0, 255), hex #ff00ff -
-                        creases of this type will swing freely.  Use this crease type when you're not sure what angle some of the
-                        creases in your pattern should fold to.</li>
+                        <li>非驱动折痕具有<b style="color:magenta">洋红色</b>描边 - rgb(255, 0, 255), hex #ff00ff -
+                        这种类型的折痕将自由摆动。当您不确定图案中某些折痕应该折叠到什么角度时，请使用此折痕类型。</li>
                     </ul>
                         <object type="image/svg+xml" data="assets/doc/hinges.svg">
                           Your browser does not support SVG
                         </object>
                     <ul>
-                        <li>Line style and stroke width do not matter.</li>
-                        <li>Remove clipping masks from your file before importing.</li>
-                        <li>This tool should be able to automatically clean files of slightly misaligned vertices, stray vertices,
-                        duplicate lines, and extra vertices falling in the middle of an edge,
-                        but it is recommended to remove these errors yourself in order to avoid problems.</li>
-                        <li>If your simulation is not working, check that the imported pattern looks correct by clicking on the <b>Pattern</b> view in the top nav bar.
-                        You can also download a copy of the imported pattern ( <b>File > Save Pattern as SVG</b> ) and view it in a vector
-                        editing program of your choice.</li>
+                        <li>线条样式和描边宽度不重要。</li>
+                        <li>在导入前从文件中移除剪切蒙版。</li>
+                        <li>此工具应该能够自动清理轻微错位顶点、孤立顶点、
+                        重复线和落在边中间的额外顶点的文件，
+                        但建议您自己移除这些错误以避免问题。</li>
+                        <li>如果您的模拟不工作，请通过单击顶部导航栏中的<b>图案</b>视图检查导入的图案是否看起来正确。
+                        您还可以下载导入图案的副本（<b>文件 > 将图案另存为SVG</b>）并在您选择的矢量
+                        编辑程序中查看它。</li>
                     </ul><br/>
 
-                <b>For Adobe Illustrator users:</b><br/><br/>
-                I use Illustrator to create SVGs (though any vector editing program should be fine).  Here are some tips I've found for making svgs to import into this tool.<br/><br/>
+                <b>Adobe Illustrator用户指南：</b><br/><br/>
+                我使用Illustrator创建SVG（虽然任何矢量编辑程序都可以）。以下是我发现的一些用于制作要导入此工具的svg的技巧。<br/><br/>
                     <ul>
                         <li>If you are starting with a pre-made vector file, first release all clipping masks (<b>Select all + Object > Clipping Mask > Release</b>).</li>
                         <li>Create geometry using the <b>Line Segment</b>, <b>Rectangle</b>,  and <b>Polygon</b> tools.</li>
@@ -1469,24 +1461,24 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <p><b>VIRTUAL REALITY</b><br/><br/>
-                This tool currently supports an interactive Virtual Reality mode for the Vive and Oculus headset and controllers (it may work on others, but it is not tested).
-                For this to work, you must first use a <a href="https://webvr.info/" target="_blank">WebVR enabled browser</a>:
-                currently only <a href="https://webvr.info/get-chrome/" target="_blank">an experimental build of Chromium</a> (with enable-webvr and
-                        -enable-gamepad-extensions flags) and <a href="https://webvr.rocks/firefox" target="_blank">the latest Firefox for Windows </a>
-                      are supported by this app.
+                <p><b>虚拟现实</b><br/><br/>
+                此工具目前支持Vive和Oculus头显和控制器的交互式虚拟现实模式（它可能在其他设备上工作，但未经测试）。
+                为此，您必须首先使用<a href="https://webvr.info/" target="_blank">支持WebVR的浏览器</a>：
+                目前只有<a href="https://webvr.info/get-chrome/" target="_blank">Chromium的实验版本</a>（带有enable-webvr和
+                        -enable-gamepad-extensions标志）和<a href="https://webvr.rocks/firefox" target="_blank">最新版Windows Firefox </a>
+                      被此应用程序支持。
                 <br/><br/>
-                    When you open this page with the appropriate browser, you will see a button that says "<b>ENTER VR</b>".  Clicking this will
-                put the app into an interactive VR mode.  The hand controllers will allow you to grab the origami mesh and pull on it.
-                This is especially interesting if you set the <b>Mesh Material</b> to <b>Strain Visualization</b> so you can see how your interactions
-                change the internal strains in the material.
+                    当您使用适当的浏览器打开此页面时，您将看到一个显示"<b>进入VR</b>"的按钮。单击此按钮将
+                将应用程序置于交互式VR模式。手柄控制器将允许您抓取折纸网格并拉动它。
+                如果您将<b>网格材质</b>设置为<b>应变可视化</b>，这特别有趣，这样您就可以看到您的交互
+                如何改变材料中的内部应变。
                 <br/><br/>
-                    <b>Troubleshooting</b>:<br/>
+                    <b>故障排除</b>:<br/>
                 <ul>
-                    <li>If the simulation looks choppy, consider lowering the <b>Animation Settings > Num Steps Per Frame</b> setting.</li>
-                    <li>The origami should load up in the center of your playspace.  If things load way off in the distance, you may need to reboot your headset and controllers and refresh this app.  I do this through SteamVR.</li>
-                    <li>If you hand controllers are not appearing, try clicking the System Button (Vive) to get them to wake up.  If you still have trouble connecting, try refreshing this app.</li>
-                    <li>WebVR is changing rapidly, if you cannot connect be sure you have the latest browser version and install any firmware updates on your headset, controllers, and sensors.</li>
+                    <li>如果模拟看起来不流畅，请考虑降低<b>动画设置 > 每帧步数</b>设置。</li>
+                    <li>折纸应该在您的游戏空间中心加载。如果东西加载到很远的地方，您可能需要重新启动头显和控制器并刷新此应用程序。我通过SteamVR执行此操作。</li>
+                    <li>如果您的手柄控制器没有出现，请尝试单击系统按钮（Vive）以唤醒它们。如果您仍然无法连接，请尝试刷新此应用程序。</li>
+                    <li>WebVR正在快速发展，如果您无法连接，请确保您拥有最新的浏览器版本并在头显、控制器和传感器上安装任何固件更新。</li>
             </ul>
                 </p>
             </div>
@@ -1500,15 +1492,14 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <p><b>ANIMATION SETTINGS</b><br/><br/>
-                The dynamic simulation is calculated by solving for all the forces in the system, moving time forward in small <b>&Delta;t</b> steps,
-                and updating the vertices of the origami incrementally.  The time step size for this animation is calculated automatically
-                based on the material stiffnesses set in the <b>Simulation Settings</b> section: more stiff settings
-                require shorter time steps to solve and will slow down the simulation.<br/>
+                <p><b>动画设置</b><br/><br/>
+                动态模拟通过求解系统中的所有力，以小的<b>&Delta;t</b>步长向前推进时间，
+                并逐步更新折纸的顶点来计算。此动画的时间步长大小根据<b>模拟设置</b>部分中设置的材料刚度自动计算：
+                更刚性的设置需要更短的时间步长来解决，并且会减慢模拟速度。<br/>
                 <br/>
                 <b>Num simulation steps per frame</b> allows you to control the number of tiny time steps forward to take on each
-                render cycle.  If the simulation looks choppy to you, you might consider lowering this setting.
-                Lowering the number of steps per frame will slow down the simulation, but will result in a more smooth animation.
+                渲染周期。如果模拟对您来说看起来不流畅，您可以考虑降低此设置。
+                降低每帧步数将减慢模拟速度，但会产生更平滑的动画。
                 </p>
             </div>
         </div><!-- /.modal-content -->
@@ -1521,18 +1512,18 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <b>EXPORT STL</b><br/><br/>
-                Filename: &nbsp;&nbsp;<input id="stlFilename" value="" placeholder="" class="bigInput text form-control" type="text"> .stl<br/><br/>
-                Scale: &nbsp;&nbsp;<input value="" placeholder="" class="float exportScale form-control" type="text"><br/><br/>
-                Dimensions: &nbsp;&nbsp;<b><span class="exportDimensions"></span></b><br/>
-                <span class="smallTxt">( the STL file format is unitless, but typically assumed to be either in inches or mm )</span><br/>
+                <b>导出STL</b><br/><br/>
+                文件名：&nbsp;&nbsp;<input id="stlFilename" value="" placeholder="" class="bigInput text form-control" type="text"> .stl<br/><br/>
+                缩放：&nbsp;&nbsp;<input value="" placeholder="" class="float exportScale form-control" type="text"><br/><br/>
+                尺寸：&nbsp;&nbsp;<b><span class="exportDimensions"></span></b><br/>
+                <span class="smallTxt">（STL文件格式是无单位的，但通常假定为英寸或毫米）</span><br/>
                 <label class="bigLabel checkbox" for="doublesidedSTL">
                     <input id="doublesidedSTL" data-toggle="checkbox" class="custom-checkbox layersSelector" type="checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
-                    Double Sided
+                    双面
                 </label>
             </div>
             <div class="modal-footer">
-                <button id="doSTLsave" type="button" class="actionButton btn btn-success" data-dismiss="modal">Save</button>
+                <button id="doSTLsave" type="button" class="actionButton btn btn-success" data-dismiss="modal">保存</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -1544,23 +1535,23 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <b>EXPORT OBJ</b><br/><br/>
-                <span class="smallTxt">These OBJs are compatible with Freeform Origami</span><br/>
-                Filename: &nbsp;&nbsp;<input id="objFilename" value="" placeholder="" class="bigInput text form-control" type="text"> .obj<br/><br/>
-                Scale: &nbsp;&nbsp;<input value="" placeholder="" class="float exportScale form-control" type="text"><br/><br/>
-                Dimensions: &nbsp;&nbsp;<b><span class="exportDimensions"></span></b><br/>
-                <span class="smallTxt">( the OBJ file format is unitless, but typically assumed to be either in inches or mm )</span><br/>
+                <b>导出OBJ</b><br/><br/>
+                <span class="smallTxt">这些OBJ文件与Freeform Origami兼容</span><br/>
+                文件名：&nbsp;&nbsp;<input id="objFilename" value="" placeholder="" class="bigInput text form-control" type="text"> .obj<br/><br/>
+                缩放：&nbsp;&nbsp;<input value="" placeholder="" class="float exportScale form-control" type="text"><br/><br/>
+                尺寸：&nbsp;&nbsp;<b><span class="exportDimensions"></span></b><br/>
+                <span class="smallTxt">（OBJ文件格式是无单位的，但通常假定为英寸或毫米）</span><br/>
                 <!--<label class="bigLabel checkbox" for="doublesidedOBJ">-->
                     <!--<input id="polyFacesOBJ" data-toggle="checkbox" class="custom-checkbox layersSelector" type="checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>-->
                     <!--Allow polygonal faces-->
                 <!--</label>-->
                 <label class="bigLabel checkbox" for="doublesidedOBJ">
                     <input id="doublesidedOBJ" data-toggle="checkbox" class="custom-checkbox layersSelector" type="checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
-                    Double Sided
+                    双面
                 </label>
             </div>
             <div class="modal-footer">
-                <button id="doOBJsave" type="button" class="actionButton btn btn-success" data-dismiss="modal">Save</button>
+                <button id="doOBJsave" type="button" class="actionButton btn btn-success" data-dismiss="modal">保存</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -1572,11 +1563,11 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <b>EXPORT FOLD</b><br/><br/>
-                Filename: &nbsp;&nbsp;<input id="foldFilename" value="" placeholder="" class="bigInput text form-control" type="text"> .fold<br/><br/>
-                Author: &nbsp;&nbsp;<input id="foldAuthor" value="" placeholder="" class="bigInput text form-control" type="text"><br/><br/>
-                Scale: &nbsp;&nbsp;<input value="" placeholder="" class="float exportScale form-control" type="text">&nbsp;&nbsp;&nbsp;&nbsp;
-                Units: &nbsp;&nbsp;
+                <b>导出FOLD</b><br/><br/>
+                文件名：&nbsp;&nbsp;<input id="foldFilename" value="" placeholder="" class="bigInput text form-control" type="text"> .fold<br/><br/>
+                作者：&nbsp;&nbsp;<input id="foldAuthor" value="" placeholder="" class="bigInput text form-control" type="text"><br/><br/>
+                缩放：&nbsp;&nbsp;<input value="" placeholder="" class="float exportScale form-control" type="text">&nbsp;&nbsp;&nbsp;&nbsp;
+                单位：&nbsp;&nbsp;
                 <div class="btn-group">
                     <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="unitsDisplay"></span> <span class="caret"></span></button>
                     <ul id="unitsDropdown" role="menu" class="dropdown-menu">
